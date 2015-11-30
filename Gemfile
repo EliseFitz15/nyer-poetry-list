@@ -4,6 +4,7 @@ gem "pg"
 gem "sinatra"
 gem "nokogiri"
 gem "sinatra-flash"
+gem "puma"
 
 group :development, :test do
   gem "pry"
