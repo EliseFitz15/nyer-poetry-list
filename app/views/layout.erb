@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Poetry List</title>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="container">
+        <a class="logo" href="/poems">Poetry List</a>
+      </div>
+    </div>
+
+    <% if flash.any? %>
+      <div class="flash">
+        <div class="container">
+          <%= flash[:notice] %>
+        </div>
+      </div>
+    <% end %>
+
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

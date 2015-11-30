@@ -1,0 +1,13 @@
+<h1>Favorite New Yorker Magazine Poems</h1>
+
+<ul>
+    <% @poems.each do |poem| %>
+  <li>
+    <a href="/poems/<%= poem["id"] %>"><%= poem["title"]%></a>
+  </li>
+    <% end %>
+</ul>
+
+<a href="http://www.newyorker.com/magazine/poems">Latest from The New Yorker Poetry Column</a>
+
+<a href="/new_poem">Add New Poem to Your Favorites</a>

@@ -1,0 +1,8 @@
+  <% @poem.each do |hash| %>
+    <h1><%= hash["title"] %></h1>
+    <h5><%= hash["author"] %></h5>
+    <div class="poem" >
+      <%= hash["body"] %>
+    </div>
+  <% end %>
+<a href="/poems">Back to list</a>
