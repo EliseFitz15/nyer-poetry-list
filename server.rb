@@ -1,6 +1,5 @@
 require "sinatra"
 require "pg"
-require "pry"
 require 'open-uri'
 require 'nokogiri'
 require 'sinatra/flash'
